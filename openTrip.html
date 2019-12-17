@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<title>Tour nde' Jatim</title>
+	<link href="openTrip.css" rel="stylesheet" type="text/css" />
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<script>
+		$(document).ready(function () {
+			$(".burger").click(function () {
+				$(".menu").toggle();
+			});
+		});
+	</script>
+
+</head>
+
+<body>
+	<div class="header">
+		<div class="header1">
+			<div class="logo">
+				<p><b>Tour nde' Jatim</b></p>
+				<div class="burger">
+					<div class="slice"></div>
+					<div class="slice"></div>
+					<div class="slice"></div>
+				</div>
+			</div>
+			<div class="menu">
+				<ul>
+					<li><a href="index.html"><span>Beranda</span></a></li>
+					<li><a href="artikel.html"><span>Artikel</span></a></li>
+					<li class="active"><a href="openTrip.html"><span>Open Trip</span></a></li class="active">
+					<li><a href="contact.html"><span>Contact Us</span></a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+
+	<div class="konten">
+		<div class="trip1">
+			<img class="gbrtrip1" src="image/kawah_ijen.jpg">
+			<h1 class="tekstrip1"><a href="openTrip1.html">Kawah Ijen</a></h1>
+		</div>
+
+		<div class="trip2">
+			<img class="gbrtrip2" src="image/baluran.jpg">
+			<h1 class="tekstrip2"><a href="openTrip2.html">Baluran</a></h1>
+		</div>
+
+		<div class="trip1">
+			<img class="gbrtrip1" src="image/bromo.jpg">
+			<h1 class="tekstrip1"><a href="openTrip3.html">Bromo</a></h1>
+		</div>
+
+		<div class="trip2">
+			<img class="gbrtrip2" src="image/watu_ulo.jpg">
+			<h1 class="tekstrip2"><a href="openTrip4.html">Watu Ulo</a></h1>
+		</div>
+
+	</div>
+
+	<div class="footer">
+		<p>Copyright @ TourNde'Jatim 2019</p>
+	</div>
+
+</body>
+
+</html>

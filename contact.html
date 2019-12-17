@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<title>Tour nde' Jatim</title>
+	<link href="contact.css" rel="stylesheet" type="text/css" />
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<script>
+		$(document).ready(function () {
+			$(".burger").click(function () {
+				$(".menu").toggle();
+			});
+		});
+	</script>
+
+</head>
+
+<body>
+	<div class="header">
+		<div class="header1">
+			<div class="logo">
+				<p><b>Tour nde' Jatim</b></p>
+				<div class="burger">
+					<div class="slice"></div>
+					<div class="slice"></div>
+					<div class="slice"></div>
+				</div>
+			</div>
+			<div class="menu">
+				<ul>
+					<li><a href="index.html"><span>Beranda</span></a></li>
+					<li><a href="artikel.html"><span>Artikel</span></a></li>
+					<li><a href="openTrip.html"><span>Open Trip</span></a></li>
+					<li class="active"><a href="contact.html"><span>Contact Us</span></a></li class="active">
+				</ul>
+			</div>
+		</div>
+		<!-- <div class="teks"><h3>WONDERFUL JATIM</h3></div> -->
+		<div class="search" style="text-align:center;">
+			<h3>SARAN UNTUK KAMI</h3>
+		</div>
+		<div class="form-saran">
+			<form class="kontak" method="POST" action="" name="form">
+					<input type="text" name="nama" required placeholder="Your name*" id="nama"><br>
+				<br>
+					<input type="email" name="email" required placeholder="Your email*" id="email"><br>
+				<br>
+					<input type="number" name="no_tel" required placeholder="Your phone*" id="hp"><br>
+				<br>
+					<input type="text" name="pesan" required placeholder="Your message*" id="pesan"><br>
+				<br>
+					<input type="submit" value="KIRIM" onclick="terima_input()">
+					<input type="button" value="HAPUS" onclick="hapus_input()">
+			</form>
+		</div>
+	</div>
+		
+		<!-- <div class="kedua">
+			<table border="1px" id="tabelInput">
+				<tr>
+					<td>Nama</td>
+					<td>Email</td>
+					<td>No. Telp</td>
+					<td>Pesan</td>
+				</tr>
+			</table>
+		</div> -->
+
+
+
+	
+
+	<div class="footer">
+		<p>Copyright @ TourNde'Jatim 2019</p>
+	</div>
+
+
+</body>
+
+
+<script>
+	// function validasi() {
+	// 	var nama = document.getElementById("nama").value;
+	// 	var email = document.getElementById("email").value;
+	// 	var noHp = document.getElementById("hp").value;
+	// 	var pesan = document.getElementById("pesan").value;
+	// 	if (nama != "" && email!="" && hp !="" && pesan !="") {
+	// 		return true;
+	// 	}else{
+	// 		alert('Anda harus mengisi data dengan lengkap !');
+	// 	}
+	// }
+
+	function terima_input() {
+		var a = document.forms['form']['nama'].value;
+    	var b = document.forms['form']['email'].value;
+    	var c = document.forms['form']['no_tel'].value;
+    	var d = document.forms['form']['pesan'].value;
+
+		var tabel = document.getElementById("tabelInput");
+		var row = tabel.insertRow(1);
+		var cell1 = row.insertCell(0);
+		var cell2 = row.insertCell(1);
+		var cell3 = row.insertCell(2);
+		var cell4 = row.insertCell(3);
+
+		cell1.innerHTML = a;
+		cell2.innerHTML = b;
+		cell3.innerHTML = c;
+		cell4.innerHTML = d;
+	}
+
+	function hapus_input() {
+		var nama = document.getElementById("nama").value="";
+		var nama = document.getElementById("email").value="";
+		var nama = document.getElementById("hp").value="";
+		var nama = document.getElementById("pesan").value="";
+	}
+
+</script>
+	
+
+
+</html>
+
+

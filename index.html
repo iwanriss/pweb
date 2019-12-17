@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<title>Tour nde' Jatim</title>
+	<link href="index.css" rel="stylesheet" type="text/css" />
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<script>
+		$(document).ready(function () {
+			$(".burger").click(function () {
+				$(".menu").toggle();
+			});
+		});
+	</script>
+
+</head>
+
+<body>
+	<div class="header">
+		<div class="header1">
+			<div class="logo">
+				<p><b>Tour nde' Jatim</b></p>
+				<div class="burger">
+					<div class="slice"></div>
+					<div class="slice"></div>
+					<div class="slice"></div>
+				</div>
+			</div>
+			<div class="menu">
+				<ul>
+					<li class="active"><a href="index.html"><span>Beranda</span></a></li>
+					<li><a href="artikel.html"><span>Artikel</span></a></li>
+					<li><a href="openTrip.html"><span>Open Trip</span></a></li>
+					<li><a href="contact.html"><span>Contact Us</span></a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+<!-- 		
+	<div class="search" style="text-align:center;">
+		<h3>WONDERFUL JATIM</h3>
+	</div> -->
+
+	<h1 class="destinasi">Destinasi Favorit</h1>
+	<div class="gambar">
+		<div class="polaroid1">
+			<img src="image/kawah_ijen.jpg" alt="Kawah Ijen" style="width:100%; height: auto;" id="myImg">
+				<div id="myModal" class="modal">
+					<span class="close">&times;</span>
+					<img class="modal-content" id="img01">
+					<div id="caption"></div>
+				</div>
+			<div class="container"><a href="openTrip1.html"> Kawah Ijen </a></div>
+		</div>
+		<div class="polaroid1">
+			<img src="image/baluran.jpg" alt="Baluran" style="width:100%">
+			<div class="container"><a> Baluran </a></div>
+		</div>
+		<div class="polaroid1">
+			<img src="image/bromo.jpg" alt="Bromo" style="width:100%">
+			<div class="container"><a> Bromo </a></div>
+		</div>
+		<div class="polaroid1">
+			<img src="image/watu_ulo.jpg" alt="WatuUlo" style="width:100%">
+			<div class="container"><a> Watu Ulo </a></div>
+		</div>
+		<div class="polaroid1">
+			<img src="image/kawah_ijen.jpg" alt="kawahijen" style="width:100%">
+			<div class="container"><a> Kawah Ijen </a></div>
+		</div>
+		<div class="polaroid1">
+			<img src="image/bromo.jpg" alt="Bromo" style="width:100%">
+			<div class="container"><a> Bromo </a></div>
+		</div>
+		<div class="polaroid1">
+			<img src="image/watu_ulo.jpg" alt="WatuUlo" style="width:100%">
+			<div class="container"><a> Watu Ulo </a></div>
+		</div>
+		<div class="polaroid1">
+			<img src="image/kawah_ijen.jpg" alt="kawahijen" style="width:100%">
+			<div class="container"><a> Kawah Ijen </a></div>
+		</div>
+	</div>
+
+
+
+	<div class="footer">
+		<p>Copyright @ TourNde'Jatim 2019</p>
+	</div>
+
+	<script>
+		var modal = document.getElementById("myModal");
+		var img = document.getElementById("myImg");
+		var modalImg = document.getElementById("img01");
+		var captionText = document.getElementById("caption");
+		img.onclick = function () {
+			modal.style.display = "block";
+			modalImg.src = this.src;
+			captionText.innerHTML = this.alt;
+		}
+
+		var span = document.getElementsByClassName("close")[0];
+		span.onclick = function () {
+			modal.style.display = "none";
+		}
+
+	</script>
+
+
+</body>
+
+</html>
